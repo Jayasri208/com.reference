@@ -43,6 +43,9 @@
 				<version>3.5.4</version>
 				<configuration>
 					<useSystemClassLoader>false</useSystemClassLoader>
+					<forkNode
+						implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory" />
+					<trimStackTrace>false</trimStackTrace>
 				</configuration>
 			</plugin>
 		</plugins>
